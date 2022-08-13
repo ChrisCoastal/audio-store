@@ -87,7 +87,7 @@ A live version will be made available here as soon as possible.
 
 ## Getting Started
 
-If you would like to work on this project locally you can clone the repo.
+If you would like to work on this project locally you can clone the repo (note: the project assets are not included in the repo).
 
 ### Prerequisites
 
