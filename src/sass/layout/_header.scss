@@ -1,0 +1,15 @@
+.main-header {
+  position: relative;
+  // width: 600px;
+  color: #fff;
+  background-color: $color-black;
+}
+
+.hero--background-image {
+  position: absolute;
+  width: 100%;
+
+  background-image: url('../../src/assets/home/mobile/image-header.jpg');
+  object-fit: cover;
+  z-index: -1000;
+}

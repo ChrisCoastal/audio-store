@@ -1,0 +1,147 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", Inter, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  min-width: 30px;
+  font-size: 16px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #fff;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: inherit;
+  font: inherit;
+  color: inherit;
+  background: none;
+  cursor: default;
+}
+
+#app {
+  max-width: 375px;
+  height: 100%;
+}
+
+.main-header {
+  position: relative;
+  color: #fff;
+  background-color: #000;
+}
+
+.hero--background-image {
+  position: absolute;
+  width: 100%;
+  background-image: url("../../src/assets/home/mobile/image-header.jpg");
+  object-fit: cover;
+  z-index: -1000;
+}
+
+.main-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 9rem;
+  background-color: #000;
+  z-index: 1000;
+}
+
+.main-nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-nav__links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 75rem;
+  top: 0;
+  left: 0;
+  margin-top: 9rem;
+  padding: 2.4rem;
+  border-radius: 0 0 8px 8px;
+  background-color: #fff;
+}
+.main-nav__links--mobile-image {
+  width: 14rem;
+}
+.main-nav__links--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 16rem;
+  margin-top: 6.8rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.main-nav__links--item.home-link {
+  display: none;
+}
+.main-nav__links--text-container {
+  width: 100%;
+  margin-top: 10;
+  color: #000;
+  text-transform: uppercase;
+}
+.main-nav__links--text-title {
+  letter-spacing: 1.06px;
+  font-weight: 600;
+}
+.main-nav__links--text-mobile-cta {
+  margin: 1.6rem 0;
+  display: inline-block;
+}
+.main-nav__links .main-nav__links--arrow-icon {
+  fill: #d87d4a;
+}
+
+.nav-button {
+  padding: 2.4rem;
+  background-color: none;
+  cursor: pointer;
+}
+.nav-button * {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
