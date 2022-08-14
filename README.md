@@ -199,5 +199,5 @@ Project Link: [https://github.com/ChrisCoastal/audio-store](https://github.com/C
 [license-shield]: https://img.shields.io/github/license/ChrisCoastal/audio-store.svg?style=for-the-badge
 [license-url]: https://github.com/ChrisCoastal/audio-store/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/christopher-allen-3194371b5
+[linkedin-url]: https://www.linkedin.com/in/chriscoastal/
 [product-screenshot]: images/screenshot.png
