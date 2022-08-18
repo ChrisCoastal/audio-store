@@ -44,7 +44,7 @@
     background-color: $color-grey-100;
     cursor: pointer;
 
-    &.home-link {
+    & &.home-link {
       display: none;
     }
   }
@@ -75,6 +75,13 @@
   padding: 2.4rem;
   background-color: none;
   // cursor: pointer;
+
+  .screen-reader--cart-button {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+  }
 
   &* {
     cursor: pointer;

@@ -47,6 +47,7 @@ a {
   font-weight: 500;
   color: #fff;
   text-decoration: inherit;
+  cursor: pointer;
 }
 
 a:hover {
@@ -160,7 +161,7 @@ button {
   background-color: #f1f1f1;
   cursor: pointer;
 }
-.main-nav__links--item.home-link {
+.main-nav__links--item .main-nav__links--item.home-link {
   display: none;
 }
 .main-nav__links--text-container {
@@ -184,6 +185,12 @@ button {
 .nav-button {
   padding: 2.4rem;
   background-color: none;
+}
+.nav-button .screen-reader--cart-button {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
 }
 .nav-button* {
   cursor: pointer;
