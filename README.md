@@ -26,7 +26,7 @@
 <h3 align="center">Audio</h3>
 
   <p align="center">
-    Audio is a demo web store built with vanilla Typescript, Sass, and Vite. The project focuses on frontend functionality and styling to match a Figma brief from <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. Its intended as a technical styling practice, pastiche, and study in layout/design.
+    Audio is a demo web store built with vanilla Typescript, Sass, and Vite. The project focuses on frontend functionality and styling to match a Figma brief from <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. Its intended as a technical styling practice (building to spec), pastiche, and study in layout/design.
     <br />
     <a href="https://github.com/ChrisCoastal/audio-store"><strong>Explore the docs »</strong></a>
     <br />

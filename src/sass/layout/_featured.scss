@@ -1,0 +1,161 @@
+.featured {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 4rem;
+  margin-top: 12rem;
+
+  a {
+    display: inline-block;
+    margin-top: 2.4rem;
+    padding: 1.4rem 2.8rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: inherit;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &.button-filled {
+      // color: $color-white;
+      background-color: $color-black;
+    }
+
+    &.button-outline {
+      color: $color-black;
+      outline: $color-black solid 1px;
+    }
+  }
+
+  &__product-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // height: 60rem;
+    margin: 0 2.4rem;
+    padding: 2.4rem;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 8px;
+    color: $color-white;
+    background: repeating-radial-gradient(
+      circle at 50% 30%,
+      $color-primary,
+      $color-primary 16rem,
+      $color-primary-light 16.1rem,
+      $color-primary-light 16.2rem,
+      $color-primary 16.2rem,
+      $color-primary 18.6rem,
+      $color-primary-light 18.7rem,
+      $color-primary-light 18.8rem
+    );
+
+    &--image-box {
+      position: relative;
+      margin-top: 4.2rem;
+      width: 60%;
+    }
+
+    // &--image {
+    //   position: relative;
+    //   // mix-blend-mode: multiply;
+    //   z-index: 500;
+    // }
+
+    // &--background-circles {
+    //   position: absolute;
+    //   display: inline-block;
+    //   top: -10%;
+    //   left: -10%;
+    //   width: 30rem;
+    //   height: 30rem;
+    //   // transform: translate(-50% -50%);
+    //   border-radius: 50%;
+    //   border: 2px solid $color-primary-light;
+
+    //   &::before,
+    //   &::after {
+    //     position: inherit;
+    //     content: '';
+    //     top: inherit;
+    //     left: inherit;
+    //     border: inherit;
+    //     border-radius: inherit;
+    //     width: 36rem;
+    //     height: 36rem;
+    //   }
+
+    //   &::after {
+    //     width: 40rem;
+    //     height: 40rem;
+    //   }
+    // }
+
+    &--text-box {
+      margin-top: 3.6rem;
+    }
+
+    &--title {
+      line-height: 1.2;
+    }
+    &--text {
+      margin-top: 2.4rem;
+    }
+
+    &--link {
+      margin-bottom: 4.2rem;
+    }
+  }
+
+  &__product-2 {
+    position: relative;
+    margin: 0 2.4rem;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+
+    &--background-image {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background-image: url('../../src/assets/home/mobile/image-speaker-zx7.jpg');
+      background-size: cover;
+    }
+
+    &--text-box {
+      position: absolute;
+      top: 30%;
+      left: 16%;
+    }
+
+    &--title {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__product-3 {
+    margin: 0 2.4rem;
+
+    &--background-image {
+      border-radius: 8px;
+    }
+
+    &--text-box {
+      width: 100%;
+      height: 18rem;
+      margin-top: 1rem;
+      padding: 4rem 2.4rem;
+      border-radius: 8px;
+      background-color: $color-grey-100;
+      background-image: radial-gradient(
+        circle at 30% 20%,
+        $color-grey-100,
+        $color-grey-600 40rem
+      );
+    }
+
+    &--title {
+      font-size: 2.8rem;
+    }
+  }
+}
