@@ -17,10 +17,6 @@ body {
   font-size: 16px;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  font-weight: normal;
-}
-
 h2 {
   font-size: 3.6rem;
   font-weight: 600;
@@ -31,6 +27,10 @@ h3 {
   font-size: 2.8rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+p {
+  font-weight: 300;
 }
 
 ol,
@@ -50,7 +50,7 @@ a {
 }
 
 a:hover {
-  color: #fff;
+  color: #e0976e;
 }
 
 button {
@@ -376,6 +376,43 @@ button {
 }
 .story__text {
   margin-top: 2.8rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1;
+  justify-items: center;
+  text-align: center;
+  gap: 4.8rem;
+  margin-top: 12rem;
+  padding: 0 3rem 4rem 3rem;
+  background-color: #000;
+}
+.footer::before {
+  content: "";
+  width: 30%;
+  height: 0.4rem;
+  background-color: #d87d4a;
+}
+.footer__menu--logo {
+  margin-top: 3rem;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-transform: uppercase;
+}
+.footer__text {
+  color: #fff;
+}
+.footer__copyright {
+  font-size: 1.4rem;
+  color: #f1f1f1;
+}
+.footer__social-links {
+  display: flex;
+  gap: 1.6rem;
 }
 
 button {
