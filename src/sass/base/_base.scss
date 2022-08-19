@@ -78,8 +78,24 @@ button {
   cursor: pointer;
 }
 
+.screen-reader {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
 #app {
-  max-width: 400px;
-  height: 100%;
   // max-width: 1280px;
+  max-width: 470px;
+  height: 100%;
+  margin: 0 auto;
 }

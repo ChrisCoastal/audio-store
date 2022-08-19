@@ -64,9 +64,24 @@ button {
   cursor: pointer;
 }
 
+.screen-reader {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
 #app {
-  max-width: 400px;
+  max-width: 470px;
   height: 100%;
+  margin: 0 auto;
 }
 
 .main-header {
@@ -78,19 +93,34 @@ button {
   width: 100%;
   background-color: none;
 }
+.hero__container {
+  position: relative;
+  overflow: hidden;
+}
 .hero__background-image {
   position: relative;
   display: inline-block;
   width: 100%;
   height: 60rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url("../../src/assets/home/mobile/image-header.jpg");
   background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   z-index: -1000;
 }
+.hero__background-image--overlay {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
 .hero__text-box {
   position: absolute;
-  top: 9rem;
+  width: 100%;
+  top: 4rem;
+  margin: 0 2.4rem;
   text-align: center;
 }
 .hero__text-box--heading {
@@ -185,12 +215,6 @@ button {
 .nav-button {
   padding: 2.4rem;
   background-color: none;
-}
-.nav-button .screen-reader--cart-button {
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
 }
 .nav-button* {
   cursor: pointer;
@@ -419,7 +443,8 @@ button {
 }
 .footer__social-links {
   display: flex;
-  gap: 1.6rem;
+  align-items: center;
+  gap: 2.4rem;
 }
 
 button {
