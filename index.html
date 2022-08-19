@@ -112,23 +112,20 @@
         <section class="hero">
           <div class="hero__container">
             <span class="hero__background-image--overlay"></span>
-            <img
-              srcset="
-                ../../src/assets/home/mobile/image-header.jpg  750w,
-                ../../src/assets/home/tablet/image-header.jpg 1536w,
-                ../../src/assets/home/desktop/image-hero.jpg  1440w
-              "
-              sizes="(max-width: 480px) 750px, (max-width: 950px) 1536px,
-            1440px"
-              src="../../src/assets/home/desktop/image-hero.jpg"
-              alt="XX99 Mark II Headphones"
-              class="hero__background-image"
-            />
-            <!-- <span
-              class="hero__background-image"
-              role="img"
-              aria-label="XX99 Mark II Headphones"
-              ></span> -->
+            <picture class="hero__background-image">
+              <source
+                srcset="../../src/assets/home/mobile/image-header.jpg"
+                media="(max-width: 480px)"
+              />
+              <source
+                srcset="../../src/assets/home/mobile/image-header.jpg"
+                media="(max-width: 780px)"
+              />
+              <img
+                src="../../src/assets/home/desktop/image-hero.jpg"
+                alt="XX99 Mark II Headphones"
+              />
+            </picture>
             <div class="hero__text-box">
               <h1 class="hero__text-box--heading">New product</h1>
               <h2 class="hero__text-box--title">XX99 Mark II Headphones</h2>

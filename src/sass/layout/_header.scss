@@ -23,8 +23,8 @@
     //     rgba($color-black, 0.1)
     //   ),
     //   url('../../src/assets/home/mobile/image-header.jpg');
-    background-size: cover;
-    background-position: center center;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     z-index: -1000;
 
@@ -46,14 +46,14 @@
   &__text-box {
     position: absolute;
     width: 100%;
-    top: 4rem;
-    margin: 0 2.4rem;
+    top: 3rem;
     text-align: center;
 
     &--heading {
       margin-top: 20rem;
       text-transform: uppercase;
       font-size: 1.4rem;
+      font-weight: 400;
       letter-spacing: 1rem;
       color: $color-grey-400;
     }
